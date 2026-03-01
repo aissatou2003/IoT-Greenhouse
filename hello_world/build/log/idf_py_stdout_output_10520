@@ -1,0 +1,2 @@
+Command: C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe C:\esp\v5.5.2\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ndeye\esp\hello_world\build\hello_world.elf C:\Users\ndeye\esp\hello_world\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe' 'C:\esp\v5.5.2\esp-idf\tools\idf.py' '-p' 'COM7'
+could not open port '\\\\.\\COM7': PermissionError(13, 'Accès refusé.', None, 5)

@@ -1,0 +1,54 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=0 C:\Users\ndeye\esp\hello_world
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.47.1.windows.2")
+-- git describe returned 'fatal: bad config line 2 in file C:/esp/v5.5.2/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/config'
+-- Minimal build - ON
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file C:/Users/ndeye/esp/hello_world/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Found Python3: C:/Espressif/tools/python/v5.5.2/venv/Scripts/python.exe (found version "3.11.9") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "hello_world" version: 1
+-- Adding linker script C:/Users/ndeye/esp/hello_world/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/ndeye/esp/hello_world/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_master.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_smp.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_dtm.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_scan.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/esp/v5.5.2/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_bootloader_format esp_common esp_driver_gpio esp_hw_support esp_mm esp_partition esp_pm esp_rom esp_security esp_system esp_timer esptool_py freertos hal heap log main mbedtls newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: C:/esp/v5.5.2/esp-idf/components/app_update C:/esp/v5.5.2/esp-idf/components/bootloader C:/esp/v5.5.2/esp-idf/components/bootloader_support C:/esp/v5.5.2/esp-idf/components/cxx C:/esp/v5.5.2/esp-idf/components/efuse C:/esp/v5.5.2/esp-idf/components/esp_app_format C:/esp/v5.5.2/esp-idf/components/esp_bootloader_format C:/esp/v5.5.2/esp-idf/components/esp_common C:/esp/v5.5.2/esp-idf/components/esp_driver_gpio C:/esp/v5.5.2/esp-idf/components/esp_hw_support C:/esp/v5.5.2/esp-idf/components/esp_mm C:/esp/v5.5.2/esp-idf/components/esp_partition C:/esp/v5.5.2/esp-idf/components/esp_pm C:/esp/v5.5.2/esp-idf/components/esp_rom C:/esp/v5.5.2/esp-idf/components/esp_security C:/esp/v5.5.2/esp-idf/components/esp_system C:/esp/v5.5.2/esp-idf/components/esp_timer C:/esp/v5.5.2/esp-idf/components/esptool_py C:/esp/v5.5.2/esp-idf/components/freertos C:/esp/v5.5.2/esp-idf/components/hal C:/esp/v5.5.2/esp-idf/components/heap C:/esp/v5.5.2/esp-idf/components/log C:/Users/ndeye/esp/hello_world/main C:/esp/v5.5.2/esp-idf/components/mbedtls C:/esp/v5.5.2/esp-idf/components/newlib C:/esp/v5.5.2/esp-idf/components/partition_table C:/esp/v5.5.2/esp-idf/components/pthread C:/esp/v5.5.2/esp-idf/components/soc C:/esp/v5.5.2/esp-idf/components/spi_flash C:/esp/v5.5.2/esp-idf/components/xtensa
+-- Configuring done (18.8s)
+-- Generating done (0.9s)
+-- Build files have been written to: C:/Users/ndeye/esp/hello_world/build
