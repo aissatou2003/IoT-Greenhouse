@@ -395,6 +395,12 @@ void app_main(void)
     ESP_ERROR_CHECK(nvs_flash_init());
     uart_init();
 
+    ESP_ERROR_CHECK(nvs_flash_init());
+    uart_init();
+
+    // Lancement de la simulation pour tester avec ton collègue LoRa
+    xTaskCreate(simulation_task, "simu_task", 4096, NULL, 5, NULL);
+
     nimble_port_init();
 
     ble_svc_gap_init();
@@ -406,4 +412,30 @@ void app_main(void)
     ble_hs_cfg.sync_cb = ble_on_sync;
 
     nimble_port_freertos_init(ble_host_task);
+}
+
+// Fonction de génération de données fictives
+static void simulation_task(void *pvParameters) {
+    while (1) {
+        // Simulation de capteurs (Temp, Lum, Hum)
+        float temp = 22.0 + (rand() % 50) / 10.0;
+        int lum = 300 + (rand() % 100);
+        
+        char simulated_payload[64];
+        snprintf(simulated_payload, sizeof(simulated_payload), "T=%.1f;L=%d", temp, lum);
+
+        // Formatage final avec priorité N (Normale)
+        char line[200];
+        snprintf(line, sizeof(line), "S1;SEQ=%d;PRIO=N;TYPE=TEL;%s\n", g_seq, simulated_payload);
+
+        ESP_LOGI(TAG, "SIMULATION: Envoi donnée fictive...");
+        
+        // Envoi avec attente d'ACK (2 secondes de timeout)
+        if (uart_send_and_wait_ack(line, g_seq, 2LL * 1000 * 1000)) {
+            g_seq++;
+        }
+
+        // Attendre 10 secondes avant la prochaine mesure
+        vTaskDelay(pdMS_TO_TICKS(10000));
+    }
 }
