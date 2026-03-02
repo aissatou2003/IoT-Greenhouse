@@ -1,0 +1,134 @@
+Command: C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe C:\esp\v5.5.2\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ndeye\esp\gateway_s3\build\gateway_s3.elf C:\Users\ndeye\esp\gateway_s3\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe' 'C:\esp\v5.5.2\esp-idf\tools\idf.py' '-p' 'COM7'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037dfa6
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (32) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  2 2026 08:39:20[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v0.2[0m
+[0;32mI (36) boot: efuse block revision: v1.3[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=15094h ( 86164) map[0m
+[0;32mI (115) esp_image: segment 1: paddr=000250bc vaddr=3fc9ab00 size=03e48h ( 15944) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00028f0c vaddr=40374000 size=0710ch ( 28940) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=52e58h (339544) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=00082e80 vaddr=4037b10c size=0f9c4h ( 63940) load[0m
+[0;32mI (226) esp_image: segment 5: paddr=0009284c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (235) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (236) boot: Disabling RNG early entropy source...[0m
+[0;32mI (246) cpu_start: Multicore app[0m
+[0;32mI (254) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (255) cpu_start: Pro cpu start user code[0m
+[0;32mI (255) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (256) app_init: Application information:[0m
+[0;32mI (260) app_init: Project name:     gateway_s3[0m
+[0;32mI (264) app_init: App version:      a180881-dirty[0m
+[0;32mI (269) app_init: Compile time:     Mar  2 2026 08:39:14[0m
+[0;32mI (274) app_init: ELF file SHA256:  1b3458450...[0m
+[0;32mI (278) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (283) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (286) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (290) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (294) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (301) heap_init: At 3FCA0BA0 len 00048B70 (290 KiB): RAM[0m
+[0;32mI (306) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (316) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;33mW (322) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (331) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (335) spi_flash: flash io: opi_str[0m
+[0;33mW (338) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (357) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) main_task: Started on CPU0[0m
+[0;32mI (382) main_task: Calling app_main()[0m
+[0;32mI (392) BLE_INIT: BT controller compile version [5106725][0m
+[0;32mI (392) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (392) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (392) BLE_INIT: Bluetooth MAC: 90:e5:b1:cb:84:06[0m
+[0;32mI (402) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (452) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (452) NimBLE: Failed to restore IRKs from store; status=8[0m
+
+[0;32mI (452) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (452) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (462) NimBLE: duration=forever[0m
+[0;32mI (462) NimBLE: [0m
+
+[0;32mI (472) S3_ORCHESTRATOR: Scan démarré...[0m
+[0;32mI (472) main_task: Returned from app_main()[0m
+[0;32mI (7992) S3_ORCHESTRATOR: Serre détectée ! Connexion...[0m
+[0;32mI (7992) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (7992) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (7992) NimBLE: 10:51:db:0d:ba:2e[0m
+[0;32mI (8002) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=24 itvl_max=40 latency=0 supervision_timeout=256 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (8012) NimBLE: [0m
+
+[0;32mI (8192) S3_ORCHESTRATOR: Connecté à GreenHouse-C6 ✅[0m
+[0;32mI (8592) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=37;LUM=836;[0m
+[0;32mI (8592) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=1;PRIO=N;TYPE=TEL;T=24.4;H=37;LUM=836;[0m
+
+[0;32mI (9592) S3_ORCHESTRATOR: Message complet reçu : T=24.3;H=37;LUM=834;[0m
+[0;32mI (9592) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=2;PRIO=N;TYPE=TEL;T=24.3;H=37;LUM=834;[0m
+
+[0;32mI (10642) S3_ORCHESTRATOR: Message complet reçu : T=24.3;H=37;LUM=835;[0m
+[0;32mI (10642) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=3;PRIO=N;TYPE=TEL;T=24.3;H=37;LUM=835;[0m
+
+[0;32mI (11642) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=37;LUM=835;[0m
+[0;32mI (11642) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=4;PRIO=N;TYPE=TEL;T=24.4;H=37;LUM=835;[0m
+
+[0;32mI (12642) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=37;LUM=843;[0m
+[0;32mI (12642) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=5;PRIO=N;TYPE=TEL;T=24.4;H=37;LUM=843;[0m
+
+[0;32mI (13692) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=839;[0m
+[0;32mI (13692) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=6;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=839;[0m
+
+[0;32mI (14692) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=838;[0m
+[0;32mI (14692) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=7;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=838;[0m
+
+[0;32mI (15692) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=839;[0m
+[0;32mI (15692) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=8;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=839;[0m
+
+[0;32mI (16692) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=844;[0m
+[0;32mI (16692) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=9;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=844;[0m
+
+[0;32mI (17742) S3_ORCHESTRATOR: Message complet reçu : T=24.3;H=38;LUM=841;[0m
+[0;32mI (17742) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=10;PRIO=N;TYPE=TEL;T=24.3;H=38;LUM=841;[0m
+
+[0;32mI (18742) S3_ORCHESTRATOR: Message complet reçu : T=24.3;H=38;LUM=840;[0m
+[0;32mI (18742) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=11;PRIO=N;TYPE=TEL;T=24.3;H=38;LUM=840;[0m
+
+[0;32mI (19742) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=37;LUM=840;[0m
+[0;32mI (19742) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=12;PRIO=N;TYPE=TEL;T=24.4;H=37;LUM=840;[0m
+
+[0;32mI (20742) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=37;LUM=840;[0m
+[0;32mI (20742) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=13;PRIO=N;TYPE=TEL;T=24.4;H=37;LUM=840;[0m
+
+[0;32mI (21792) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=830;[0m
+[0;32mI (21792) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=14;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=830;[0m
+
+[0;32mI (22792) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=838;[0m
+[0;32mI (22792) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=15;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=838;[0m
+
+[0;32mI (23792) S3_ORCHESTRATOR: Message complet reçu : T=24.4;H=38;LUM=831;[0m
+[0;32mI (23792) S3_ORCHESTRATOR: >>> TRANSFERT LORA : S1;SEQ=16;PRIO=N;TYPE=TEL;T=24.4;H=38;LUM=831;[0m
+

@@ -1,0 +1,578 @@
+Command: C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe C:\esp\v5.5.2\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ndeye\esp\gateway_s3\build\gateway_s3.elf C:\Users\ndeye\esp\gateway_s3\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.2\venv\Scripts\python.exe' 'C:\esp\v5.5.2\esp-idf\tools\idf.py' '-p' 'COM7'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40380ed4: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42011667: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6749[0m
+[0m--- 0x4200bf98: [0;33mgap_event_cb[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m61[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42011664: [0;33mble_gap_disc[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c[0m[0m:[1;31m6744[0m
+[0m--- 0x4200bef5: [0;33mble_on_sync[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m105[0m
+[0m--- 0x4200c577: [0;33mble_hs_sync[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m395[0m
+[0m--- 0x4200c70f: [0;33mble_hs_start[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m712[0m
+[0m--- 0x4200c717: [0;33mble_hs_event_start_stage2[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c[0m[0m:[1;31m606[0m
+[0m--- 0x4204e1bb: [0;33mnpl_freertos_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c[0m[0m:[1;31m463[0m
+[0m--- 0x40376c9a: [0;33mble_npl_event_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mnimble_port_run[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c[0m[0m:[1;31m323[0m
+[0m--- 0x4200bed2: [0;33mble_host_task[0m[0m at [0;32mC:/Users/ndeye/esp/gateway_s3/main/gateway_s3.c[0m[0m:[1;31m109[0m
+[0m--- 0x40381ab5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.5.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Exception ignored in: <function Console.__del__ at 0x000001C103C7D800>
+Traceback (most recent call last):
+  File "C:\Espressif\tools\python\v5.5.2\venv\Lib\site-packages\serial\tools\miniterm.py", line 159, in __del__
+    ctypes.windll.kernel32.SetConsoleOutputCP(self._saved_ocp)
+KeyboardInterrupt: 
+Traceback (most recent call last):
+  File "C:\esp\v5.5.2\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1201, in communicate
+    self.wait()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1590, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
